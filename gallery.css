@@ -1,0 +1,90 @@
+.root {
+    -fx-font-family: "Arial, sans-serif";
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.grid-pane {
+    -fx-background-color: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    -fx-padding: 10px;
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-alignment: center;
+}
+
+.thumbnail-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-color: #ddd;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+.thumbnail-button:hover {
+    -fx-border-color: #0078d4;
+}
+
+.thumbnail-button:pressed {
+    -fx-border-color: #005fa3;
+}
+
+.thumbnail-button > ImageView {
+    -fx-opacity: 0.8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.5, 2, 2);
+    -fx-scaling: true;
+    -fx-halignment: center;
+    -fx-valignment: center;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-pane {
+        -fx-grid-lines-visible: true;
+    }
+
+    .grid-pane > * {
+        -fx-hgap: 5px;
+        -fx-vgap: 5px;
+    }
+}
+
+.full-image-view {
+    -fx-background-color: #fff;
+    -fx-padding: 20px;
+}
+
+.full-image-view > ImageView {
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 15, 0.5, 5, 5);
+}
+
+.button {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-min-width: 80px;
+}
+
+.button:hover {
+    -fx-background-color: #005fa3;
+}
+
+.button:pressed {
+    -fx-background-color: #004080;
+}
+
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+}
+
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
